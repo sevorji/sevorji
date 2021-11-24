@@ -1,0 +1,17 @@
+<?php
+
+$serverName = "DESKTOP-427CTM8"; //serverName\instanceName
+
+// Since UID and PWD are not specified in the $connectionInfo array,
+// The connection will be attempted using Windows Authentication.
+$connectionInfo = array( "Database"=>"GaposaApplication");
+$conn = sqlsrv_connect( $serverName, $connectionInfo); 
+ 
+/*if ($conn === false)
+{
+    echo 'connection failed';
+} 
+else {
+    echo 'connected';
+} */
+?>
